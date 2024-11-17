@@ -191,4 +191,5 @@ for epoch in range(1, n_epochs + 1):
                                        (epoch, n_epochs, loss.item(), accuracy.item(), testLoss.item(),
                                         testAccuracy.item()))
     processBar.close()
-    torch.save(net.state_dict(), './models/class.pth')
+
+torch.save(net.state_dict(), './models/class.pth')
